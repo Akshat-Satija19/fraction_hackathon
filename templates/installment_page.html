@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="{{ url_for('static', path='/css/install.css') }}" rel="stylesheet">
+  <script defer src="login-form.js"></script>
+</head>
+
+<body>
+
+  <div id="main-holder">
+    <p id="normal">Pay in full upfront with $100!</p>
+        <form action="/credit" class="form1">
+      <button class ="submit"type="submit">
+        Choose this option
+      </button>
+        </form>
+  </div>
+  <div id="main-holder">
+    <p id="normal">Pay 4 interest free payments of $25 each! (monthly)</p>
+     <form action="/credit" class="form1">
+      <button class ="submit"type="submit">
+        Choose this option
+      </button>
+        </form>
+  </div>
+  <div id="main-holder">
+    <p id="normal">Pay 8 interest free payments of $12.50 each! (biweekly) </p>
+     <form action="/credit" class="form1">
+      <button class ="submit"type="submit">
+        Choose this option
+      </button>
+        </form>
+  </div>
+<div id="total">
+<p id="tot">Your total is $100</p>
+</div>
+
+</body>
+
+</html>
